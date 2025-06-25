@@ -1,0 +1,93 @@
+:root{
+  --dark-bg: hsl(240, 3%, 0%);
+  --bg: hsl(240, 3%,5%);
+  --light-bg: hsl(240, 3%, 15%);
+  --text: hsl(240, 3%, 90%);
+  --muted-text: hsl(240, 3%, 70%);
+  --hover-bg: hsl(240, 3%, 30%);
+  --purple-acc: hsl(257, 98%, 43%);
+  --blue-acc: hsl(182, 98%, 43%);
+  margin:0;
+  padding:0;
+}
+
+body.light {
+  --dark-bg: hsl(240, 3%, 90%);
+  --bg: hsl(240, 3%,85%);
+  --light-bg: hsl(240, 3%, 80%);
+  --text: hsl(240, 3%, 5%);
+  --muted-text: hsl(240, 3%, 30%);
+  --hover-bg: hsl(240, 3%, 65%);
+}
+
+body{
+  background-color: var(--dark-bg);
+  color: var(--muted-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s ease-in;
+}
+h1,h2,h3,h4,h5,h6{
+  color: var(--text);
+  transition: 0.4s ease-in;
+}
+
+button{
+  background-color: var(--light-bg);
+  color: var(--text);
+  padding: 10px;
+  font-size: inherit;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  transition: 0.2s ease-in;
+}
+button:hover{
+  background-color: var(--hover-bg);
+}
+.container{
+  background-color:var(--bg);
+  border-radius:10px;
+  padding: 4px 10px;
+  margin: 10px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bg);
+  padding: 10px;
+  border: 1px var(--light-bg) solid;
+  border-radius: 10px;
+  gap: 10px;
+}
+a{
+  color: var(--text);
+  font-size: 1.1rem;
+}
+input{
+  background-color: var(--light-bg);
+  display: block;
+  color: var(--text);
+  border: 1px var(--hover-bg) solid;
+  font-size: 1.2em;
+  width: clamp(100px, 50vw, 500px);
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease-in;
+}
+.input-container{
+  margin: 10px;
+}
+.blue-acc-text{
+  color:var(--blue-acc);
+}
+.purple-acc-text{
+  color:var(--purple-acc);
+}

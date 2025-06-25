@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.submit{
+    align-self: center;
+    padding: 10px;
+    width: 80%;
+    margin-top: 30px;
+}
